@@ -10,18 +10,29 @@
 ## Configuring instances
 
 1 - Create a Security Group for this VPC<br />
-2 - Add Inbound types for http and ssh<br />
-3 - Install [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/)<br />
-4 - Install [Docker Compose](https://docs.docker.com/compose/install/)
-5 - Clone this repository
+2 - Add Inbound types for port 8000 as a custom TCP Rule<br />
+3 - Install Java
+```bash
+$ sudo apt-get update
+$ sudo apt-get install openjdk-7jdk
+```
+4 - Set up your ```JAVA_HOME``` environment variable<br />
+5 - Install [Leiningen](https://github.com/technomancy/leiningen) (Because I'm using Clojure for the WebApp)<br />
+6 - Install [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/)<br />
+7 - Install [Docker Compose](https://docs.docker.com/compose/install/)
+8 - Clone this repository
 ```bash
 $ git clone https://github.com/gmendonca/hello-world-aws.git
 ```
-6 - Run the WebApp
+9 - Compile the code:
 ```bash
-$ docker-compose up
+$ cd hello-world-aws/
+$ lein uberjar
 ```
-
+9 - Run the WebApp
+```bash
+$ sudo docker-compose up
+```
 
 ## Extra - Run Application Without Docker
 
