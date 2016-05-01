@@ -38,6 +38,6 @@ $ sudo docker-compose up
 
 1 - Add Inbound types for port 9000 as a custom TCP Rule to the existing Security Group<br />
 2 - Assign Load Balancer to the created VPC<br />
-3 - Select created Subnet
-4 - Select Health Check for TCP Ping Protocol on port 8000
-5 - Add EC2 instance that have the running web application.
+3 - Select created Subnet<br />
+4 - Select Health Check for TCP Ping Protocol on port 8000<br />
+5 - Add EC2 instance that have the running web application<br />
