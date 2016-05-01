@@ -53,5 +53,15 @@ $ sudo docker-compose up
 ```bash
 $ wget https://releases.hashicorp.com/nomad/0.3.2/nomad_0.3.2_linux_amd64.zip
 $ unzip nomad_0.3.2_linux_amd64.zip
-$ 
+$ sudo mv nomad /usr/local/bin
 ```
+7 - Run the server on each instance instance:
+```bash
+# Server
+sudo nomad agent -config nomad/server.hcl
+# Client 1
+sudo nomad agent -config client1.hcl
+# Client 2
+sudo nomad agent -config client2.hcl
+```
+8 - 
