@@ -1,5 +1,7 @@
 # Hello World Application using AWS
 
+Simple WebApp in Clojure running in Docker containers with Load Balancer and Nomad for management.
+
 ## Creating a VPC for production in Amazon AWS
 
 1 - Create a VPC with a CDIR block<br />
