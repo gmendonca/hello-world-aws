@@ -1,6 +1,6 @@
 # Hello World Application using AWS
 
-Simple WebApp in Clojure running in Docker containers with Load Balancer and Nomad for management.
+Simple WebApp in Clojure running in Docker containers on AWS instances with Load Balancer and Nomad for management.
 
 ## Creating a VPC for production in Amazon AWS
 
