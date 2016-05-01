@@ -58,10 +58,13 @@ $ sudo mv nomad /usr/local/bin
 7 - Run the server on each instance instance:
 ```bash
 # Server
-sudo nomad agent -config nomad/server.hcl
+$ sudo nomad agent -config nomad/server.hcl
 # Client 1
-sudo nomad agent -config client1.hcl
+$ sudo nomad agent -config client1.hcl
 # Client 2
-sudo nomad agent -config client2.hcl
+$ sudo nomad agent -config client2.hcl
 ```
-8 - 
+8 - On the server you can the status of your cluster:
+```bash
+$ nomad node-status -address=http://192.168.0.249:4646
+```

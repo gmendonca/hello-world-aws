@@ -1,11 +1,10 @@
 # Increase log verbosity
 log_level = "DEBUG"
 
-bind_addr = "0.0.0.0"
+bind_addr = "10.0.0.173"
 
 # Setup data dir
 data_dir = "/tmp/client2"
-
 
 # Enable the client
 client {
@@ -15,9 +14,4 @@ client {
     # this should be like "nomad.service.consul:4647" and a system
     # like Consul used for service discovery.
     servers = ["54.186.21.131:4647"]
-}
-
-# Modify our port to avoid a collision with server1 and client1
-ports {
-    http = 5657
 }
