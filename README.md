@@ -1,6 +1,6 @@
 # Hello World Application using AWS
 
-## Creating a VPC in Amazon AWS
+## Creating a VPC for production in Amazon AWS
 
 1 - Create a VPC with a CDIR block<br />
 2 - Create a Subnet within this VPC<br />
@@ -41,3 +41,17 @@ $ sudo docker-compose up
 3 - Select created Subnet<br />
 4 - Select Health Check for TCP Ping Protocol on port 8000<br />
 5 - Add EC2 instance that have the running web application<br />
+
+## Configuring Nomad instance
+
+1 - Create another VPC for the Nomad instance<br />
+2 - Create a Subnet within this VPC<br />
+3 - Create a IGW attach to the VPC and add to the Route Table<br />
+4 - Create a Security Group for this VPC<br />
+5 - Create another instance to in this new VPC-Subnett<br />
+6 - Install [Nomad](https://www.nomadproject.io/docs/install/index.html):
+```bash
+$ wget https://releases.hashicorp.com/nomad/0.3.2/nomad_0.3.2_linux_amd64.zip
+$ unzip nomad_0.3.2_linux_amd64.zip
+$ 
+```
