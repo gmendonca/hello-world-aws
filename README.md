@@ -19,8 +19,7 @@ sudo apt-get install openjdk-7jdk
 4 - Set up your ```JAVA_HOME``` environment variable<br />
 5 - Install [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/)<br />
 6 - Install [Leiningen](https://github.com/technomancy/leiningen) (Because I'm using Clojure for the WebApp)<br />
-
-
+7 - Clone this repository
 ```bash
-lein ring server-headless
+git clone https://github.com/gmendonca/hello-world-aws.git
 ```
