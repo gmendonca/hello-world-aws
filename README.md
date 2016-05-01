@@ -33,21 +33,3 @@ $ lein uberjar
 ```bash
 $ sudo docker-compose up
 ```
-
-## Extra - Run Application Without Docker
-
-1 - Install Java
-```bash
-$ sudo apt-get update
-$ sudo apt-get install openjdk-7jdk
-```
-2 - Set up your ```JAVA_HOME``` environment variable<br />
-3 - Install [Leiningen](https://github.com/technomancy/leiningen) (Because I'm using Clojure for the WebApp)<br />
-4 - Clone this repository
-```bash
-$ git clone https://github.com/gmendonca/hello-world-aws.git
-```
-5 - Run the WebApp:
-```bash
-$ lein run
-```
