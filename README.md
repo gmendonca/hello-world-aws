@@ -11,15 +11,27 @@
 
 1 - Create a Security Group for this VPC<br />
 2 - Add Inbound types for http and ssh<br />
-3 - Install Java
+3 - Install [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/)<br />
+4 - Clone this repository
 ```bash
-sudo apt-get update
-sudo apt-get install openjdk-7jdk
+$ git clone https://github.com/gmendonca/hello-world-aws.git
 ```
-4 - Set up your ```JAVA_HOME``` environment variable<br />
-5 - Install [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/)<br />
-6 - Install [Leiningen](https://github.com/technomancy/leiningen) (Because I'm using Clojure for the WebApp)<br />
-7 - Clone this repository
+
+
+## Extra - Run Application Without Docker
+
+1 - Install Java
 ```bash
-git clone https://github.com/gmendonca/hello-world-aws.git
+$ sudo apt-get update
+$ sudo apt-get install openjdk-7jdk
+```
+2 - Set up your ```JAVA_HOME``` environment variable<br />
+3 - Install [Leiningen](https://github.com/technomancy/leiningen) (Because I'm using Clojure for the WebApp)<br />
+4 - Clone this repository
+```bash
+$ git clone https://github.com/gmendonca/hello-world-aws.git
+```
+5 - Run the WebApp:
+```bash
+$ lein run
 ```
