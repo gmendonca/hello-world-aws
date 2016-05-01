@@ -1,10 +1,10 @@
-version: '2'
+version: '1'
 services:
   java:
     image: java:8
-  reward-system:
+  hello-world-aws:
     build: .
     ports:
-     - "8080:3000"
+     - "8000:8000"
     depends_on:
      - java

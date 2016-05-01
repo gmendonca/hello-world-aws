@@ -12,9 +12,14 @@
 1 - Create a Security Group for this VPC<br />
 2 - Add Inbound types for http and ssh<br />
 3 - Install [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/)<br />
-4 - Clone this repository
+4 - Install [Docker Compose](https://docs.docker.com/compose/install/)
+5 - Clone this repository
 ```bash
 $ git clone https://github.com/gmendonca/hello-world-aws.git
+```
+6 - Run the WebApp
+```bash
+$ docker-compose up
 ```
 
 
