@@ -40,7 +40,7 @@ $ sudo docker-compose up
 2 - Assign Load Balancer to the created VPC<br />
 3 - Select created Subnet<br />
 4 - Select Health Check for TCP Ping Protocol on port 8000<br />
-5 - Add EC2 instance that have the running web application<br />
+5 - Add EC2 instances that have the running web application<br />
 
 ## Configuring Nomad instance
 
