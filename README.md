@@ -47,15 +47,16 @@ $ sudo docker-compose up
 1 - Create another VPC for the Nomad instance<br />
 2 - Create a Subnet within this VPC<br />
 3 - Create a IGW attach to the VPC and add to the Route Table<br />
-4 - Create a Security Group for this VPC<br />
-5 - Create another instance to in this new VPC-Subnett<br />
-6 - Install [Nomad](https://www.nomadproject.io/docs/install/index.html):
+4 - Create a Security Group for this VPC and add port 4647 for Nomad<br />
+5 - Edit the Security Group for the Client instances and add port 4647<br />
+6 - Create another instance to in this new VPC-Subnett<br />
+7 - Install [Nomad](https://www.nomadproject.io/docs/install/index.html):
 ```bash
 $ wget https://releases.hashicorp.com/nomad/0.3.2/nomad_0.3.2_linux_amd64.zip
 $ unzip nomad_0.3.2_linux_amd64.zip
 $ sudo mv nomad /usr/local/bin
 ```
-7 - Run the server on each instance instance:
+8 - Run the server on each instance instance:
 ```bash
 # Server
 $ sudo nomad agent -config nomad/server.hcl
@@ -64,7 +65,7 @@ $ sudo nomad agent -config client1.hcl
 # Client 2
 $ sudo nomad agent -config client2.hcl
 ```
-8 - On the server you can the status of your cluster:
+9 - On the server you can the status of your cluster:
 ```bash
 $ nomad node-status -address=http://192.168.0.249:4646
 ```
